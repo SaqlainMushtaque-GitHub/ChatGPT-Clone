@@ -17,6 +17,7 @@ const loadDataFromLocalstorage = () => {
   const defaultText = `<div class="default-text">
                           <h1>ChatGPT Clone</h1>
                           <p>Start a conversation and explore the power of AI.<br> Your chat history will be displayed here.</p>
+                           <p style="font-size: 0.7rem;"> Created By Saqlain Mushtaque </p>
                       </div>`
   chatContainer.innerHTML = localStorage.getItem("all-chats") || defaultText;
   chatContainer.scrollTo(0, chatContainer.scrollHeight); // Scroll to bottom of the chat container
